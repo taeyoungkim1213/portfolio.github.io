@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            /* width: 500px; */
+            height: 500px;
+            border: 1px solid;
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+        }
+        .bar_p {
+            width: 100px; 
+            height: 100%;
+        }
+        .bar {
+            background: blue;
+            width: 100px; 
+            transform: scale(1, 0);
+            transform-origin: bottom;
+
+            animation: bar 1s forwards;
+        }
+        
+        .bar1 { height: 70%;}
+        .bar2 { height: 80%;}
+        .bar3 { height: 90%;}
+        .bar4 { height: 100%;}
+        .bar5 { height: 70%;}
+
+        @keyframes bar {
+            0% { transform: scale(1,0);}
+            100% { transform: scale(1,1);}
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+
+        <div class="bar_p">
+            <div class="bar bar1"></div>
+            <div class="score">70%</div>
+        </div>
+        <div class="bar_p">
+            <div class="bar bar2"></div>
+            <div class="score">80%</div>
+        </div>
+        <div class="bar_p">
+            <div class="bar bar3"></div>
+            <div class="score">90%</div>
+        </div>
+        <div class="bar_p">
+            <div class="bar bar4"></div>
+            <div class="score">100%</div>
+        </div>
+        <div class="bar_p">
+            <div class="bar bar5"></div>
+            <div class="score">70%</div>
+        </div>
+
+    </div>
+</body>
+</html>
