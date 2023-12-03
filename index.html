@@ -212,19 +212,28 @@
     <div class="title"><h1>PROJECTS</h1></div>
     
     <div class="project_container">
-
+<!-- bluehorizon -->
       <div class="bluehorizon_box">
         <div class="blue_img">
           <img src="./img/BlueHorizon.png" alt="">
         </div>
-        <div class="blue_title">Blue Horizon</div>
-        <div class="blue_txt">
-          <p>KH정보 교육원에서의 첫 팀 프로젝트</p><br>
-          <p>서비스를 이용하는 이용자들끼리의 '후기 게시판'에서</p>
-          <p>유연한 정보교환과 '동행 신청' 이라는 기능을 이용한 소셜 네트워킹이 가능한 여행 패키지 판매 사이트</p>
+        <div class="blue_txt_box">
+          <div class="blue_title">Blue Horizon</div>
+          <div class="blue_txt">
+            <p>KH정보 교육원에서의 첫 팀 프로젝트</p><br>
+            <p>제작 기간 : 23.11.14 ~ 23.11.29 (15일)</p><br>
+            <p>서비스를 이용하는 이용자들끼리의 '후기 게시판'에서 유연한 정보교환과</p><br>
+            <p> '동행 신청' 이라는 기능을 이용한 소셜 네트워킹이 가능한 여행 패키지 판매 사이트</p><br>
+           <div class="blue_pdf">
+            <a href="https://drive.google.com/file/d/1E7taE1oa5jNPn7YRB3ggXUig6ANRQWdc/view?usp=drive_link" download target="_blank">
+              <img src="./img/pdf아이콘.png" alt="이미지">
+            </a>
+           </div>
+            
+          </div>
         </div>
       </div>
-
+<!-- bluehorizon -->
     </div>
   </div>
 
@@ -327,10 +336,10 @@ y = e.pageY - $(window).scrollTop();
   
   // 스크롤 위치에 따라 투명도 조절
   if (scrolled < window.innerHeight) {
-    var opacityValue = Math.max(0.2, 0.8 - scrolled / window.innerHeight);
+    var opacityValue = Math.max(0.4, 1 - scrolled / window.innerHeight);
     video.style.opacity = opacityValue;
   } else {
-    video.style.opacity = 0.2;
+    video.style.opacity = 0.4;
   }
 });
 // 페이지 내부 이동
