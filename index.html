@@ -338,32 +338,32 @@ y = e.pageY - $(window).scrollTop();
 $(document).ready(function() {
     // 'MAIN' 메뉴 클릭 시
     $("li:contains('MAIN')").on('click', function() {
-        $('html, body').animate({
-            scrollTop: $('.main').offset().top
-        }, 'slow');
+      $('html, body').animate({
+        scrollTop: $('.MAIN').offset().top
+      }, 'slow');
     });
 
     // 'ABOUT' 메뉴 클릭 시
     $("li:contains('ABOUT')").on('click', function() {
-        $('html, body').animate({
-            scrollTop: $('.ABOUT').offset().top
-        }, 'slow');
+      $('html, body').animate({
+        scrollTop: $('.ABOUT').offset().top
+      }, 'slow');
     });
 
-    // 'TECH' 메뉴 클릭 시
+    // 'SKILL' 메뉴 클릭 시
     $("li:contains('SKILL')").on('click', function() {
-        $('html, body').animate({
-            scrollTop: $('.SKILL').offset().top
-        }, 'slow');
+      $('html, body').animate({
+        scrollTop: $('.SKILL').offset().top
+      }, 'slow');
     });
 
     // 'PROJECTS' 메뉴 클릭 시
     $("li:contains('PROJECTS')").on('click', function() {
-        $('html, body').animate({
-            scrollTop: $('.PROJECTS').offset().top
-        }, 'slow');
+      $('html, body').animate({
+        scrollTop: $('.PROJECTS').offset().top
+      }, 'slow');
     });
-});
+  });
 
 });
 </script>
