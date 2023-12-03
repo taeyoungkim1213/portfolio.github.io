@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
     <script type="text/javascript" src="./js/index.js"></script> 
-    <script  src="http://code.jquery.com/jquery-latest.min.js"></script> 
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script> 
 </head>
 <body>
   <div class="wrap">
@@ -244,6 +244,7 @@
 <script>
 
 // 따라다니는 메뉴바 
+$(document).ready(function() {
 $(window).load(function(){
     var height = window.innerHeight,
     x= 0, y= height/2,
@@ -346,34 +347,34 @@ y = e.pageY - $(window).scrollTop();
 $(document).ready(function() {
     // 'MAIN' 메뉴 클릭 시
     $("li:contains('MAIN')").on('click', function() {
-        $('html, body').animate({
-            scrollTop: $('.main').offset().top
-        }, 'slow');
+      $('html, body').animate({
+        scrollTop: $('.MAIN').offset().top
+      }, 'slow');
     });
 
     // 'ABOUT' 메뉴 클릭 시
     $("li:contains('ABOUT')").on('click', function() {
-        $('html, body').animate({
-            scrollTop: $('.ABOUT').offset().top
-        }, 'slow');
+      $('html, body').animate({
+        scrollTop: $('.ABOUT').offset().top
+      }, 'slow');
     });
 
-    // 'TECH' 메뉴 클릭 시
+    // 'SKILL' 메뉴 클릭 시
     $("li:contains('SKILL')").on('click', function() {
-        $('html, body').animate({
-            scrollTop: $('.SKILL').offset().top
-        }, 'slow');
+      $('html, body').animate({
+        scrollTop: $('.SKILL').offset().top
+      }, 'slow');
     });
 
     // 'PROJECTS' 메뉴 클릭 시
     $("li:contains('PROJECTS')").on('click', function() {
-        $('html, body').animate({
-            scrollTop: $('.PROJECTS').offset().top
-        }, 'slow');
+      $('html, body').animate({
+        scrollTop: $('.PROJECTS').offset().top
+      }, 'slow');
     });
+  });
+
 });
-
-
 </script>
 </body>
 </html>

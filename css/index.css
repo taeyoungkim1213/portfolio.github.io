@@ -391,7 +391,8 @@ body, html {
         height: 100%;
     }.bar {
       background: orange;
-      width: 100px;
+      width: 80px;
+      margin: 0 auto;
       transform: scale(1, 0);
       transform-origin: bottom;
       transition: transform 0.5s ease; /* Adding transition property */
@@ -426,6 +427,7 @@ body, html {
     }
     .skill_img img{
       width: 100px;
+      height: 100px;
     }
     .score p{
       font-size: 21px;
