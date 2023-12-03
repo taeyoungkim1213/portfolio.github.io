@@ -390,7 +390,7 @@ body, html {
         width: 100px; 
         height: 100%;
     }.bar {
-      background: orange;
+      background: FED057;
       width: 100px;
       transform: scale(1, 0);
       transform-origin: bottom;
@@ -426,6 +426,7 @@ body, html {
     }
     .skill_img img{
       width: 100px;
+      height: 100px;
     }
     .score p{
       font-size: 21px;
