@@ -487,10 +487,13 @@ body, html {
        .blue_txt{
         font-size: 16px;
        }
+       .blue_git,
        .blue_pdf{
         width: 100px;
         height: 100px;
+        display: inline-block;
        }
+       .blue_git img,
        .blue_pdf img{
         width: 100px;
         height: 100px;
