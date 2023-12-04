@@ -36,7 +36,7 @@
   <!-- <h2> hover close to the menu </h2>  -->
   <!-- 1페이지 -->
 	<div class="MAIN">
-    <div class="title"><h1 style="color: black;">Backend Portfolio</h1></div>
+    <div class="title"><h1>Backend Portfolio</h1></div>
     <div class="profile_box">
       <div class="img_box">
         <img src="./img/이력서jpg.jpg" alt="">
@@ -58,21 +58,21 @@
     </div>
     <div class="scroll_bar">Scroll<div class="a"><span></span></div></div>
 
-    <div class="bg-video">
+    <!-- <div class="bg-video">
       <video class="bg-video__content" autoplay muted loop>
         <source src="./moving/main.mov" type="video/mp4" />
         <source src="img/video.webm" type="video/webm" />
       </video>
-    </div>
+    </div> -->
   </div>
   <!-- 1페이지 끝 -->
   <div class="ABOUT">
     <div class="title"><h1>ABOUT</h1></div>
 <!-- 내용물 -->
    <div class="about_container">
-    <div class="about_top">
+    
       <div class="about_box a_box">
-        <div class="inner_title"><h1>About Me</h1></div> 
+        <div class="inner_title"><h1>INFO</h1></div> 
         <div class="about_contents">
           <!-- 이력서 사진 들어갈 곳. -->
             <p>어쩌구 저쩌구</p>
@@ -83,7 +83,7 @@
         <div class="chnannel_contents">
           <div class="git_box">
             <a href="https://github.com/taeyoungkim1213" target="_blank">
-              <img src="./img/gitjpeg.jpeg" alt="">
+              <img src="./img/깃.png" alt="" s>
             </a>
           </div>
           <div class="discode_box">
@@ -100,9 +100,9 @@
           
         </div>
       </div>
-    </div>
+    
 
-    <div class="about_bottom">
+ 
       <div class="education_box a_box">
         <div class="inner_title"><h1>Education</h1></div> 
         <div class="education_contents">
@@ -119,7 +119,7 @@
           <p>MOS(Microsoft Office Specialist)</p>
         </div>
       </div>
-    </div>
+    
    </div>
 
 
@@ -231,7 +231,7 @@
            </div>
            <div class="blue_git">
             <a href="https://github.com/taeyoungkim1213/tripTeam" target="_blank">
-              <img src="./img/gitjpeg.jpeg" alt="">
+              <img src="./img/깃.png" alt="">
              </a>
            </div>
             
@@ -336,18 +336,19 @@ y = e.pageY - $(window).scrollTop();
 
 
   //배경 비디오 스크롤
-  window.addEventListener('scroll', function() {
-  var video = document.querySelector('.bg-video__content');
-  var scrolled = window.scrollY;
+//   window.addEventListener('scroll', function() {
+//   var video = document.querySelector('.bg-video__content');
+//   var scrolled = window.scrollY;
   
-  // 스크롤 위치에 따라 투명도 조절
-  if (scrolled < window.innerHeight) {
-    var opacityValue = Math.max(0.4, 1 - scrolled / window.innerHeight);
-    video.style.opacity = opacityValue;
-  } else {
-    video.style.opacity = 0.4;
-  }
-});
+//   // 스크롤 위치에 따라 투명도 조절
+//   if (scrolled < window.innerHeight) {
+//     var opacityValue = Math.max(0.4, 1 - scrolled / window.innerHeight);
+//     video.style.opacity = opacityValue;
+//   } else {
+//     video.style.opacity = 0.4;
+//   }
+// });
+
 // 페이지 내부 이동
 $(document).ready(function() {
     // 'MAIN' 메뉴 클릭 시
