@@ -104,13 +104,21 @@ body, html {
 
  /* 페이지 모두 100vh */
 
+.MAIN,
+.ABOUT,
+.INTRODUCE,
+.SKILL,
+.PROJECTS{
+  border-top: 1px solid;
+  box-sizing: border-box;
+}
 
 .MAIN{
   width: 100%;
   /* height: 100vh; */
  }
  .MAIN img{
-  width: 100%;
+  /* width: 100%; */
  }
 
 
@@ -119,7 +127,7 @@ body, html {
   /* height: 100vh; */
 }
 .ABOUT img{
-  width: 100%;
+  /* width: 100%; */
   scale: 0.75;
   
 }
@@ -129,18 +137,10 @@ body, html {
   position: relative;
   top: 0;
 }
-.kakao_img{
-  width: 140px;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-}
-.kakao_img img{
-  width: 100%;
-}
+
 
 .INTRODUCE img{
-  width: 100%;
+  /* width: 100%; */
   scale: 0.75;
 }
 
@@ -149,7 +149,7 @@ body, html {
   /* height: 100vh; */
 }
 .SKILL img{
-  width: 100%;
+  /* width: 100%; */
   scale: 0.75;
 }
 
@@ -160,7 +160,7 @@ body, html {
   background-color: #555;
 }
 .PROJECTS img{
-  width: 100%;
+  /* width: 100%; */
   /* height: 100vh; */
   
 }
@@ -186,7 +186,7 @@ body, html {
   color: red;
 }
 .ABC img{
-  width: 100%;
+  /* width: 100%; */
   scale: 0.8;
   /* height: 100vh; */
 }
