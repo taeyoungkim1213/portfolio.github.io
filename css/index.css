@@ -4,7 +4,6 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(55, 55, 55);
   }
 
   #menu {
@@ -101,409 +100,77 @@ body, html {
     font-weight: 100;
   }
 
-  /* 비디오 */
-  /* .bg-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -2;
-    opacity: 1;
-  }
+  /* 메뉴바 끝 */
 
-  .bg-video__content {
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-    transition: filter 0.5s ease; 
-  } */
-  /* 내용 시작............. */
-  .title{
-    width: 100%;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-   }
-   .title h1{
-    font-size: 50px;
-    color: #fff;
-    font-weight: 900;
-    font-family: Arial, sans-serif;
-    border-bottom: 2px solid #fff;
-    border-top: 2px solid #fff;
-   }
-   .inner_title{
-    width: 100%;
-    height: 80px;
-    line-height: 80px;
-    text-align: center;
-    background-color: rgb(55, 55, 55);
-    
-
-    /* background-color: pink; */
-   }
-   .inner_title h1{
-    font-size: 28px;
-    font-weight: 900;
-    font-family: Arial, sans-serif;
-    border-radius: 20px 20px 0 0;
-    color: #000000;
-    background-color: rgb(255, 255, 255);
-   }
-   /* MAIN  */
-   .MAIN{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    top: 0;
-   }
-   .scroll_bar{
-    padding-top: 70px;
-    font-size: 32px;
-    color: white;
-    position: absolute;
-    bottom: 35px;
-    left: 50%;
-    transform: translateX(-50%);
-   }
-   .scroll_bar span{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 26px;
-    height: 26px;
-    margin-left: -12px;
-    border-left: 3px solid #ffffff;
-    border-bottom: 3px solid #ffffff;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-animation: sdb 1.5s infinite;
-    animation: sdb 1.5s infinite;
-    box-sizing: border-box;
-   }
-   @-webkit-keyframes sdb {
-    0% {
-      -webkit-transform: rotate(-45deg) translate(0, 0);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-      opacity: 0;
-    }
-  }
-  @keyframes sdb {
-    0% {
-      transform: rotate(-45deg) translate(0, 0);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      transform: rotate(-45deg) translate(-20px, 20px);
-      opacity: 0;
-    }
-  }
+ /* 페이지 모두 100vh */
 
 
+.MAIN{
+  width: 100%;
+  /* height: 100vh; */
+ }
+ .MAIN img{
+  width: 100%;
+ }
 
 
-
-
-   /* ++++++++++++++++++++메인 프로필 사진 +++++++++++++++++++++++++ */
-   .profile_box{
-    width: 1000px;
-    height: 500px;
-    background-color: rgba(55, 55, 55, 0.9);
-    padding: 30px;
-    border-radius: 20px;
-    box-sizing: border-box;
-
-    position: absolute;
-    top: 50%;
-    left: 58%;
-    transform: translate(-50%,-50%);
-   }
-   .img_box{
-    width: 300px;
-    height: 300px;
-    float: left;
-   }
-   .img_box img{
-    width: 100%;
-    border-radius: 20px;
-   }
-   .profile_txt_box{
-    width: calc(100% - 300px);
-    height: 100%;
-    float: left;
-    display: flex;
-    padding: 30px;
-    box-sizing: border-box;
-    align-items: center;
-   }
-   
-   .pro_name{
-    width: 100px;
-    text-align: center;
-    padding: 0 20px 0 0;
-    box-sizing: border-box;
-    border-right: 3px solid rgb(255, 255, 255);
-   }
-   .name_contents{  
-    width: calc(100% - 100px);
-    padding: 0 0 0 20px;
-   }
-   .name_contents p,
-   .pro_name p{
-    width: 100%;
-    height: 60px;
-    color: white;
-    line-height: 60px;
-    font-size: 24px;
-   }
-
-/* ++++++++++++++++++++메인 프로필 사진 끝 +++++++++++++++++++++++++ */
-   /*  ABOUT 시작 지점*/
-   .ABOUT{
-    width: 100%;
-    height: 100vh;
-    /* background-color: gray; */
-   }
-   .about_container{
-    width: 1400px;
-    height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 35px;
-    align-content: center;
-   }
-/* Flexbox를 이용하여 요소들을 가로로 나란히 배치 */
-
-
-/* 내부 요소들의 스타일 */
-.about_box,
-.chnannel_box,
-.education_box,
-.experience_box {
-  width: calc(50% - 20px); /* 여백 고려한 너비 설정 */
-  margin-bottom: 20px; /* 아래 여백 추가 */
-  /* 다른 스타일 속성 추가 */
+ .ABOUT{
+  width: 100%;
+  /* height: 100vh; */
 }
-  .contents{
-    font-size: 17px;
-    font-weight: 600;
-  }
-   .about_contents{
-    width: 100%;
-    height: 160px;
-    padding: 30px;
-    text-align: center;
-    color: black;
-    background-color: rgba(255, 255, 255, 1);
-    box-sizing: border-box;
-   }
-   /* 채널 */
-   .chnannel_contents{
-    width: 100%;
-    height: 160px; 
-    padding: 30px;
-    box-sizing: border-box;
-    text-align: center;
-    color: black;
-    background-color: rgba(255, 255, 255, 1);
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-   }
-
-   .kakao_box,
-   .discode_box,
-   .git_box{
-    width: 150px;
-    height: 100px;
-   }
-   .kakao_box img,
-   .discode_box img,
-   .git_box img{
-    width: 150px;
-    height: 100px;
-    border-radius: 50%;
-   }
-   .git_box img{
-    scale: 1.2;
-   }
+.ABOUT img{
+  width: 100%;
+  scale: 0.75;
   
-   
-
-   .education_contents{
-    width: 100%;
-    height: 160px;
-    padding: 30px;
-    box-sizing: border-box;
-    text-align: left;
-    color: black;
-    background-color: rgba(255, 255, 255, 1);
-    box-sizing: border-box;
-   }
-
-    
-   .experience_contents{
-    width: 100%;
-    height: 160px;
-    padding: 30px;
-    text-align: center;
-    color: black;
-    background-color: rgba(255, 255, 255, 1);
-    box-sizing: border-box;
-   }
-
-   /* TECH 시작 */
-   .SKILL{
-    width: 100%;
-    height: 100vh;
-    /* background-color: yellow; */
-   }
-   .skill_container{
-    width: 1400px;
-    height: 82%;
-    margin: 0 auto;
-
-    position: relative;
-    top: 0;
-   }
-   .outer {
-       /* width: 100%; */
-       height: 80%;
-       /* border: 1px solid; */
-       display: flex;
-       align-items: baseline;
-       gap: 20px;
-       position: absolute;
-       left: 50%;
-       top: 50%;
-       transform: translate(-50%,-50%);
-    }
-    .bar_p {
-        width: 100px; 
-        height: 100%;
-    }.bar {
-      background: orange;
-      width: 80px;
-      margin: 0 auto;
-      transform: scale(1, 0);
-      transform-origin: bottom;
-      transition: transform 0.5s ease; /* Adding transition property */
-  
-      /* Animation only when hovering */
-      transition: transform 0.5s ease;
-  }
-    /* .bar {
-        background: orange;
-        width: 100px; 
-        transform: scale(1, 0);
-        transform-origin: bottom;
-
-        animation: bar 1s forwards;
-    } */
-    /* Hover effect */
-.SKILL:hover .bar {
-  transform: scale(1, 1);
 }
 
-    .bar1 { height: 70%;}
-    .bar2 { height: 60%;}
-    .bar3 { height: 70%;}
-    .bar4 { height: 80%;}
-    .bar5 { height: 80%;}
-    .bar6 { height: 70%;}
-    .bar7 { height: 80%;}
-    .bar8 { height: 80%;}
-    .skill_img{
-      width: 100px;
-      margin-top: 10px;
-    }
-    .skill_img img{
-      width: 100px;
-      height: 100px;
-      border-radius: 20px;
-    }
-    .score p{
-      font-size: 21px;
-      font-weight: 900;
-      text-align: center;
-      color: #fff;
-      padding: 8px;
-      box-sizing: border-box;
-    }
+.INTRODUCE{
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+.kakao_img{
+  width: 140px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.kakao_img img{
+  width: 100%;
+}
 
-    @keyframes bar {
-        0% { transform: scale(1,0);}
-        100% { transform: scale(1,1);}
-    }
-    
+.INTRODUCE img{
+  width: 100%;
+  scale: 0.75;
+}
+
+.SKILL{
+  width: 100%;
+  /* height: 100vh; */
+}
+.SKILL img{
+  width: 100%;
+  scale: 0.75;
+}
 
 
-      .PROJECTS{
-        width: 100%;
-        height: 100vh;
-      }
-      .project_container{
-        width: 1400px;
-        height: 100vh;
-        padding: 50px;
-        box-sizing: border-box;
-        margin: 0 auto;
-       }
-       .bluehorizon_box{
-        padding: 30px;
-        box-sizing: border-box;
-        border: 1px solid #fff;
-        border-radius: 20px;
-        display: flex;
-        gap: 30px;
-       }
-       .blue_img{
-        /* width: 100%; */
-        
-       }
-       .blue_img img{
-        width: 500px;
-        height: 300px;
-        border-radius: 20px;
-       }
-       .blue_txt_box{
-        padding: 10px;
-        box-sizing: border-box;
-        color: white;
-       }
-       .blue_title{
-        width: 100%;
-        color: skyblue;
-        text-align: left;
-        font-size: 38px;
-        margin-bottom: 20px;
-        font-weight: 900;
-       }
-       .blue_txt{
-        font-size: 16px;
-       }
-       .blue_git,
-       .blue_pdf{
-        width: 100px;
-        height: 100px;
-        display: inline-block;
-       }
-       .blue_git img,
-       .blue_pdf img{
-        width: 100px;
-        height: 100px;
-        border-radius: 20px;
-       }
+.PROJECTS{
+  width: 100%;
+  height: 100vh;
+  background-color: #555;
+}
+.PROJECTS img{
+  width: 100%;
+  /* height: 100vh; */
+  
+}
+.ABC{
+  width: 100%;
+  /* height: 100vh; */
+}
+.ABC img{
+  width: 100%;
+  scale: 0.8;
+  /* height: 100vh; */
+}
+
