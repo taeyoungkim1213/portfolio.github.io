@@ -166,7 +166,24 @@ body, html {
 }
 .ABC{
   width: 100%;
+  position: relative;
+  top: 0;
   /* height: 100vh; */
+}
+.ABC_link{
+  position: absolute;
+    top: 26%;
+    right: 25%;
+    font-size: 22px;
+    font-family: fantasy;
+    color: #5d5d5d;
+    z-index: 1;
+}
+.ABC_link b{
+  font-weight: 500;
+}
+.ABC_link:hover{
+  color: red;
 }
 .ABC img{
   width: 100%;
